@@ -1,0 +1,10 @@
+﻿namespace Active_Directory_Toolbelt.ui
+{
+    public partial class AdminTools : MetroFramework.Forms.MetroForm
+    {
+        public AdminTools()
+        {
+            InitializeComponent();
+        }
+    }
+}
