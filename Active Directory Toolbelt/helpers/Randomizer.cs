@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Active Directory Toolbelt 
  * Developed by @ Dean Reid
  *
- * Class Name: LocationHandler
+ * Class Name: Randomizer
  *
  * Class Information:
  *
