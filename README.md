@@ -23,11 +23,6 @@ To install the program on your system, you need the following:
 - .Net 7.0 or Higher - https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 - Be connected to an Active Directory Domain for best results.
 
-
-```powershell
-git clone https://github.com/your-username/ActiveDirectoryAndCloudManagement.git
-```
-
 You can then run the program using the exe.
 
 
