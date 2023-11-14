@@ -4,7 +4,7 @@ using System.IO;
 using static Active_Directory_Toolbelt.handlers.LogHandler;
 
 /*
-* Aviva Policy Book Deployment Tool V2
+* Active Directory Toolbelt 
 * Developed by @ Dean Reid
 *
 * Class Name: FileHandler

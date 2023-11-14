@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 
 /*
- * Aviva Policy Book Deployment Tool V2
+ * Active Directory Toolbelt 
  * Developed by @ Dean Reid
  *
  * Class Name: LogHandler

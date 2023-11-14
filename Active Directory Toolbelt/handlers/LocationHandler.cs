@@ -6,7 +6,7 @@ using static Active_Directory_Toolbelt.handlers.LogHandler;
 using MessageBox = System.Windows.Forms.MessageBox;
 
 /*
- * Aviva Policy Book Deployment Tool V2
+ * Active Directory Toolbelt 
  * Developed by @ Dean Reid
  *
  * Class Name: LocationHandler
