@@ -11,7 +11,7 @@ namespace Active_Directory_Toolbelt.ui
             InitializeComponent();
             LogHandler.Log(LogTarget.File, "Main Menu Loaded");
             lblDCID.Text = Reference.DOMAIN_ID;
-            lblUserID.Text = Reference.USER_ID;
+            lblUserID.Text = "Dean R";// Reference.USER_ID;
         }
 
         private void BtnUserTools_Click(object sender, EventArgs e)

@@ -28,6 +28,9 @@ namespace Active_Directory_Toolbelt.ui
         public AssetTools()
         {
             InitializeComponent();
+            LogHandler.Log(LogTarget.File, "Asset Tools Loaded");
+            lblDCID.Text = Reference.DOMAIN_ID;
+            lblUserID.Text = "Dean R";// Reference.USER_ID;
         }
 
         private void btnReturn_Click(object sender, EventArgs e)

@@ -41,6 +41,8 @@
             // 
             // btnReturn
             // 
+            btnReturn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            btnReturn.AutoSize = true;
             btnReturn.BackColor = Color.DodgerBlue;
             btnReturn.FlatAppearance.MouseDownBackColor = Color.Blue;
             btnReturn.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
@@ -49,7 +51,7 @@
             btnReturn.ForeColor = SystemColors.ControlLightLight;
             btnReturn.Location = new Point(8, 20);
             btnReturn.Name = "btnReturn";
-            btnReturn.Size = new Size(29, 36);
+            btnReturn.Size = new Size(38, 36);
             btnReturn.TabIndex = 25;
             btnReturn.Text = "<";
             btnReturn.UseVisualStyleBackColor = false;
@@ -57,6 +59,7 @@
             // 
             // btnSelectFolder
             // 
+            btnSelectFolder.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnSelectFolder.BackColor = Color.DodgerBlue;
             btnSelectFolder.FlatAppearance.MouseDownBackColor = Color.Blue;
             btnSelectFolder.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
@@ -73,6 +76,7 @@
             // 
             // lstViewFiles
             // 
+            lstViewFiles.Anchor = AnchorStyles.Top;
             lstViewFiles.BackColor = Color.Black;
             lstViewFiles.Columns.AddRange(new ColumnHeader[] { fileName, fileTypeExt });
             lstViewFiles.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
@@ -87,6 +91,7 @@
             // 
             // btnExecute
             // 
+            btnExecute.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnExecute.BackColor = Color.Crimson;
             btnExecute.FlatAppearance.MouseDownBackColor = Color.Blue;
             btnExecute.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
@@ -103,6 +108,8 @@
             // 
             // BtnExit
             // 
+            BtnExit.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            BtnExit.AutoSize = true;
             BtnExit.BackColor = Color.Navy;
             BtnExit.FlatAppearance.MouseDownBackColor = Color.Blue;
             BtnExit.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
@@ -111,7 +118,7 @@
             BtnExit.ForeColor = SystemColors.ControlLightLight;
             BtnExit.Location = new Point(365, 21);
             BtnExit.Name = "BtnExit";
-            BtnExit.Size = new Size(27, 36);
+            BtnExit.Size = new Size(35, 36);
             BtnExit.TabIndex = 29;
             BtnExit.Text = "X";
             BtnExit.UseVisualStyleBackColor = false;
@@ -121,6 +128,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             ClientSize = new Size(415, 637);
             ControlBox = false;
             Controls.Add(BtnExit);
@@ -132,11 +140,13 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "PSExecutor";
+            Resizable = false;
             Style = MetroFramework.MetroColorStyle.White;
             Text = "Powershell Executor";
             TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;
             Theme = MetroFramework.MetroThemeStyle.Dark;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
