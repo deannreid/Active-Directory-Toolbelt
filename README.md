@@ -50,7 +50,7 @@ You will be prompted to enter your username and password for the Active Director
 
 
 ## Usage
-To use the program's graphical user interface (GUI), you need to have a web browser that supports HTML5. You can launch the GUI by clicking on the icon. You will be redirected to a web page that shows a login form for the Azure, if your company has SSO **User Groups will be implemented soon for PAM***. After logging in successfully, you will see a dashboard that shows various tabs for managing Active Directory Users and Computers and Cloud Platforms. You can click on any tab to access its features.
+To use the program's graphical user interface (GUI), you need to have a PC that supports HTML5 and .Net 7 or higher. You can launch the GUI by clicking on the icon. You will be redirected to a web page that shows a login form for Azure or your local Active Directory, if your company has SSO **User Groups will be implemented soon for PAM***. After logging in successfully, you will see a dashboard that shows various tabs for managing Active Directory Users, Computers, and Cloud Platforms. You can click on any tab to access its features.
 
 For more information on how to use the program's GUI features, please refer to the README.md file in this repository.
 
