@@ -28,8 +28,28 @@ You can then run the program using the exe.
 
 You will be prompted to enter your username and password for the Active Directory Management API ***Coming Soon****. You can also specify other options.
 
-## Usage
+# Screenshots
+## Main Menu
+![image](https://github.com/deannreid/Active-Directory-Toolbelt/assets/5481657/03b8cdc0-79bf-456a-9f14-3aced6e76255)
 
+
+## User Admin
+![image](https://github.com/deannreid/Active-Directory-Toolbelt/assets/5481657/44d722f9-72c9-4ed6-b251-1b6003d61431)
+
+
+## Asset Management
+![image](https://github.com/deannreid/Active-Directory-Toolbelt/assets/5481657/f47f2405-34c4-4761-9d68-7ed7ad98f7f4)
+
+## Powershell Executor
+![image](https://github.com/deannreid/Active-Directory-Toolbelt/assets/5481657/4b7ff114-d0fb-428b-9770-73639131c24c)
+
+
+## Cloud Management _Work In Progress*_
+![image](https://github.com/deannreid/Active-Directory-Toolbelt/assets/5481657/5a0d6471-f568-43c4-b0c6-541a50693155)
+
+
+
+## Usage
 To use the program's graphical user interface (GUI), you need to have a web browser that supports HTML5. You can launch the GUI by clicking on the icon. You will be redirected to a web page that shows a login form for the Azure, if your company has SSO **User Groups will be implemented soon for PAM***. After logging in successfully, you will see a dashboard that shows various tabs for managing Active Directory Users and Computers and Cloud Platforms. You can click on any tab to access its features.
 
 For more information on how to use the program's GUI features, please refer to the README.md file in this repository.
