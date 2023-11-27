@@ -60,6 +60,13 @@ namespace Active_Directory_Toolbelt.utils
         public static String PRODUCTION_SERVER_HN = "Cosmo DS";
 
         /**
+         * CyberArk API 
+         */
+        // Replace these values with your CyberArk instance details
+        public static string apiUrl = "https://cyberark-instance/api/v1/accounts";
+        public static string apiToken = "API TOKEN";
+
+        /**
            * Set Configuration Info.
            */
 

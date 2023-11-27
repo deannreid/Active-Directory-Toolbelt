@@ -41,13 +41,12 @@ namespace Active_Directory_Toolbelt.ui.bulkcreation
             ControlBox = false;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "MultiUserTools";
+            Name = "BulkUserCreate";
             Style = MetroFramework.MetroColorStyle.Yellow;
             Text = "MultiUserTools";
             TextAlign = System.Windows.Forms.VisualStyles.HorizontalAlign.Center;
             Theme = MetroFramework.MetroThemeStyle.Dark;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
