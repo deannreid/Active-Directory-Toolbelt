@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj",
+        "projectName": "Active Directory Toolbelt",
+        "projectPath": "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj",
+        "packagesPath": "C:\\Users\\PhotonUser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\PhotonUser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-windows7.0": {
+            "targetAlias": "net7.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-windows7.0": {
+          "targetAlias": "net7.0-windows",
+          "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.10.3, )"
+            },
+            "Cake.Powershell": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "DotNetOpenAuth": {
+              "target": "Package",
+              "version": "[4.3.4.13329, )"
+            },
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MetroFramework": {
+              "target": "Package",
+              "version": "[1.2.0.3, )"
+            },
+            "Microsoft.Azure.ActiveDirectory.GraphClient": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.57.0, )"
+            },
+            "Sentry": {
+              "target": "Package",
+              "version": "[3.41.0, )"
+            },
+            "System.Diagnostics.Process": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.DirectoryServices": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "System.DirectoryServices.AccountManagement": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

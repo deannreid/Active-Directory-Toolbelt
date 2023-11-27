@@ -76,6 +76,7 @@
             lblDCID.Size = new Size(71, 13);
             lblDCID.TabIndex = 12;
             lblDCID.Text = "%DCTEXT%";
+            lblDCID.Click += lblDCID_Click;
             // 
             // label3
             // 
@@ -89,6 +90,7 @@
             label3.Size = new Size(95, 13);
             label3.TabIndex = 11;
             label3.Text = "Current DC:";
+            label3.Click += label3_Click;
             // 
             // lblUserID
             // 
@@ -102,6 +104,7 @@
             lblUserID.Size = new Size(87, 13);
             lblUserID.TabIndex = 10;
             lblUserID.Text = "%USERTEXT%";
+            lblUserID.Click += lblUserID_Click;
             // 
             // lblCurrentUser
             // 
@@ -115,6 +118,7 @@
             lblCurrentUser.Size = new Size(111, 13);
             lblCurrentUser.TabIndex = 9;
             lblCurrentUser.Text = "Current User:";
+            lblCurrentUser.Click += lblCurrentUser_Click;
             // 
             // lblHeader
             // 
@@ -137,6 +141,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // btnReturn
             // 
@@ -217,6 +222,7 @@
             pnlUserInfo.Name = "pnlUserInfo";
             pnlUserInfo.Size = new Size(375, 373);
             pnlUserInfo.TabIndex = 17;
+            pnlUserInfo.Paint += pnlUserInfo_Paint;
             // 
             // varUserManager
             // 

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="ui\AdminFailedLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\AdminTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\AssetTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\bulkcreation\BulkUserCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\CloudTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\MultiUserTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\PSExecutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ui\UserToolMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

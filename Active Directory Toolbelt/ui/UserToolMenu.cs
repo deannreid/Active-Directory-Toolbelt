@@ -262,5 +262,30 @@ namespace Active_Directory_Toolbelt.ui
         {
             Application.Exit();
         }
+
+        private void pnlUserInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblDCID_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblCurrentUser_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblUserID_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

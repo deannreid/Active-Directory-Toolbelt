@@ -41,6 +41,7 @@
             btnAdmin = new Button();
             btnPSExec = new Button();
             BtnExit = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -76,9 +77,9 @@
             btnUserTools.ForeColor = SystemColors.ControlLightLight;
             btnUserTools.Location = new Point(151, 198);
             btnUserTools.Name = "btnUserTools";
-            btnUserTools.Size = new Size(308, 66);
+            btnUserTools.Size = new Size(138, 66);
             btnUserTools.TabIndex = 2;
-            btnUserTools.Text = "User Tools";
+            btnUserTools.Text = "Single \r\nUser Tools";
             btnUserTools.UseVisualStyleBackColor = false;
             btnUserTools.Click += BtnUserTools_Click;
             // 
@@ -214,6 +215,21 @@
             BtnExit.UseVisualStyleBackColor = false;
             BtnExit.Click += BtnExit_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Navy;
+            button1.FlatAppearance.MouseDownBackColor = Color.Blue;
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(321, 198);
+            button1.Name = "button1";
+            button1.Size = new Size(138, 66);
+            button1.TabIndex = 12;
+            button1.Text = "Multi\r\nUser Tools";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -221,6 +237,7 @@
             AutoSize = true;
             ClientSize = new Size(632, 553);
             ControlBox = false;
+            Controls.Add(button1);
             Controls.Add(BtnExit);
             Controls.Add(btnPSExec);
             Controls.Add(btnAdmin);
@@ -258,5 +275,6 @@
         private Button btnAdmin;
         private Button btnPSExec;
         private Button BtnExit;
+        private Button button1;
     }
 }
