@@ -41,7 +41,7 @@
             btnAdmin = new Button();
             btnPSExec = new Button();
             BtnExit = new Button();
-            button1 = new Button();
+            btnMUT = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -215,20 +215,21 @@
             BtnExit.UseVisualStyleBackColor = false;
             BtnExit.Click += BtnExit_Click;
             // 
-            // button1
+            // btnMUT
             // 
-            button1.BackColor = Color.Navy;
-            button1.FlatAppearance.MouseDownBackColor = Color.Blue;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(321, 198);
-            button1.Name = "button1";
-            button1.Size = new Size(138, 66);
-            button1.TabIndex = 12;
-            button1.Text = "Multi\r\nUser Tools";
-            button1.UseVisualStyleBackColor = false;
+            btnMUT.BackColor = Color.Navy;
+            btnMUT.FlatAppearance.MouseDownBackColor = Color.Blue;
+            btnMUT.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
+            btnMUT.FlatStyle = FlatStyle.Flat;
+            btnMUT.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMUT.ForeColor = SystemColors.ControlLightLight;
+            btnMUT.Location = new Point(321, 198);
+            btnMUT.Name = "btnMUT";
+            btnMUT.Size = new Size(138, 66);
+            btnMUT.TabIndex = 12;
+            btnMUT.Text = "Multi\r\nUser Tools";
+            btnMUT.UseVisualStyleBackColor = false;
+            btnMUT.Click += btnMUT_Click;
             // 
             // MainMenu
             // 
@@ -237,7 +238,7 @@
             AutoSize = true;
             ClientSize = new Size(632, 553);
             ControlBox = false;
-            Controls.Add(button1);
+            Controls.Add(btnMUT);
             Controls.Add(BtnExit);
             Controls.Add(btnPSExec);
             Controls.Add(btnAdmin);
@@ -275,6 +276,6 @@
         private Button btnAdmin;
         private Button btnPSExec;
         private Button BtnExit;
-        private Button button1;
+        private Button btnMUT;
     }
 }

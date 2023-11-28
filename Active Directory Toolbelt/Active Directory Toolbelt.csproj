@@ -32,18 +32,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.10.3" />
+    <PackageReference Include="Azure.Identity" Version="1.10.4" />
     <PackageReference Include="Cake.Powershell" Version="3.0.0" />
     <PackageReference Include="DotNetOpenAuth" Version="4.3.4.13329" />
     <PackageReference Include="FakeItEasy" Version="8.0.0" />
     <PackageReference Include="MetroFramework" Version="1.2.0.3" />
     <PackageReference Include="Microsoft.Azure.ActiveDirectory.GraphClient" Version="2.1.1" />
     <PackageReference Include="Microsoft.Identity.Client" Version="4.57.0" />
-    <PackageReference Include="Sentry" Version="3.41.0" />
+    <PackageReference Include="Sentry" Version="3.41.2" />
     <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
-    <PackageReference Include="System.DirectoryServices" Version="7.0.1" />
-    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="7.0.1" />
-    <PackageReference Include="xunit" Version="2.6.1" />
+    <PackageReference Include="System.DirectoryServices" Version="8.0.0" />
+    <PackageReference Include="System.DirectoryServices.AccountManagement" Version="8.0.0" />
+    <PackageReference Include="xunit" Version="2.6.2" />
   </ItemGroup>
 
   <ItemGroup>

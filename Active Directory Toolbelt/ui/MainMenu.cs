@@ -63,5 +63,14 @@ namespace Active_Directory_Toolbelt.ui
         {
             Application.Exit();
         }
+
+        private void btnMUT_Click(object sender, EventArgs e)
+        {
+            LogHandler.Log(LogTarget.File, "Button: MultiUserTools Pressed");
+            var doggy = new MultiUserTools();
+            this.Hide();
+            doggy.ShowDialog();
+            this.Close();
+        }
     }
 }

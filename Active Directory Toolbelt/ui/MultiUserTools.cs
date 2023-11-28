@@ -1,4 +1,5 @@
 ﻿using Active_Directory_Toolbelt.handlers;
+using Active_Directory_Toolbelt.ui.popup;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,6 +33,16 @@ namespace Active_Directory_Toolbelt.ui
         private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            LogHandler.Log(LogTarget.File, "Button: Return to Menu Pressed");
+            //SelectedApplication = "PBD";
+            btnExecute fileSelect = new btnExecute();
+
+            fileSelect.ShowDialog();
+
         }
     }
 }
