@@ -15,8 +15,12 @@ namespace Active_Directory_Toolbelt.ui
 {
     public partial class MultiUserTools : MetroFramework.Forms.MetroForm
     {
+        public string SelectedApplication { get; private set; }
+
+
         public MultiUserTools()
         {
+            SelectedApplication = "";
             InitializeComponent();
         }
 
@@ -35,14 +39,24 @@ namespace Active_Directory_Toolbelt.ui
             Application.Exit();
         }
 
-        private void btnTest_Click(object sender, EventArgs e)
+        private void btnBulkCreate_Click(object sender, EventArgs e)
         {
             LogHandler.Log(LogTarget.File, "Button: Return to Menu Pressed");
-            //SelectedApplication = "PBD";
+            SelectedApplication = "BUCreate";
             btnExecute fileSelect = new btnExecute();
-
+            this.Hide();
             fileSelect.ShowDialog();
+            this.Close(); 
+        }
 
+        private void btnBulkDelete_Click(object sender, EventArgs e)
+        {
+            LogHandler.Log(LogTarget.File, "Button: Return to Menu Pressed");
+            SelectedApplication = "BUDelete";
+            btnExecute fileSelect = new btnExecute();
+            this.Hide();
+            fileSelect.ShowDialog();
+            this.Close();
         }
     }
 }

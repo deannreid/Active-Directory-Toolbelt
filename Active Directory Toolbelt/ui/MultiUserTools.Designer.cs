@@ -35,9 +35,8 @@
             label3 = new Label();
             lblUserID = new Label();
             lblCurrentUser = new Label();
-            button2 = new Button();
-            button1 = new Button();
-            btnTest = new Button();
+            btnBulkCreate = new Button();
+            btnBulkDelete = new Button();
             SuspendLayout();
             // 
             // BtnExit
@@ -124,53 +123,37 @@
             lblCurrentUser.TabIndex = 27;
             lblCurrentUser.Text = "Current User:";
             // 
-            // button2
+            // btnBulkCreate
             // 
-            button2.BackColor = Color.SeaGreen;
-            button2.Enabled = false;
-            button2.FlatAppearance.MouseDownBackColor = Color.LawnGreen;
-            button2.FlatAppearance.MouseOverBackColor = Color.SeaGreen;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Lucida Console", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.ForeColor = SystemColors.ActiveCaptionText;
-            button2.Location = new Point(131, 82);
-            button2.Name = "button2";
-            button2.Size = new Size(177, 41);
-            button2.TabIndex = 36;
-            button2.Text = "Bulk Create Accounts";
-            button2.UseVisualStyleBackColor = false;
+            btnBulkCreate.BackColor = Color.SeaGreen;
+            btnBulkCreate.FlatAppearance.MouseDownBackColor = Color.LawnGreen;
+            btnBulkCreate.FlatAppearance.MouseOverBackColor = Color.SeaGreen;
+            btnBulkCreate.FlatStyle = FlatStyle.Flat;
+            btnBulkCreate.Font = new Font("Lucida Console", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBulkCreate.ForeColor = SystemColors.ActiveCaptionText;
+            btnBulkCreate.Location = new Point(131, 82);
+            btnBulkCreate.Name = "btnBulkCreate";
+            btnBulkCreate.Size = new Size(177, 41);
+            btnBulkCreate.TabIndex = 36;
+            btnBulkCreate.Text = "Bulk Create Accounts";
+            btnBulkCreate.UseVisualStyleBackColor = false;
+            btnBulkCreate.Click += btnBulkCreate_Click;
             // 
-            // button1
+            // btnBulkDelete
             // 
-            button1.BackColor = Color.Salmon;
-            button1.Enabled = false;
-            button1.FlatAppearance.MouseDownBackColor = Color.Crimson;
-            button1.FlatAppearance.MouseOverBackColor = Color.DarkRed;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Lucida Console", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(347, 82);
-            button1.Name = "button1";
-            button1.Size = new Size(177, 41);
-            button1.TabIndex = 37;
-            button1.Text = "Bulk Delete Accounts";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // btnTest
-            // 
-            btnTest.BackColor = Color.SeaGreen;
-            btnTest.FlatAppearance.MouseDownBackColor = Color.LawnGreen;
-            btnTest.FlatAppearance.MouseOverBackColor = Color.SeaGreen;
-            btnTest.FlatStyle = FlatStyle.Flat;
-            btnTest.Font = new Font("Lucida Console", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnTest.ForeColor = SystemColors.ActiveCaptionText;
-            btnTest.Location = new Point(131, 160);
-            btnTest.Name = "btnTest";
-            btnTest.Size = new Size(177, 41);
-            btnTest.TabIndex = 38;
-            btnTest.Text = "Test";
-            btnTest.UseVisualStyleBackColor = false;
-            btnTest.Click += btnTest_Click;
+            btnBulkDelete.BackColor = Color.Salmon;
+            btnBulkDelete.FlatAppearance.MouseDownBackColor = Color.Crimson;
+            btnBulkDelete.FlatAppearance.MouseOverBackColor = Color.DarkRed;
+            btnBulkDelete.FlatStyle = FlatStyle.Flat;
+            btnBulkDelete.Font = new Font("Lucida Console", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnBulkDelete.ForeColor = SystemColors.ControlLightLight;
+            btnBulkDelete.Location = new Point(347, 82);
+            btnBulkDelete.Name = "btnBulkDelete";
+            btnBulkDelete.Size = new Size(177, 41);
+            btnBulkDelete.TabIndex = 37;
+            btnBulkDelete.Text = "Bulk Delete Accounts";
+            btnBulkDelete.UseVisualStyleBackColor = false;
+            btnBulkDelete.Click += btnBulkDelete_Click;
             // 
             // MultiUserTools
             // 
@@ -178,9 +161,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(663, 391);
             ControlBox = false;
-            Controls.Add(btnTest);
-            Controls.Add(button1);
-            Controls.Add(button2);
+            Controls.Add(btnBulkDelete);
+            Controls.Add(btnBulkCreate);
             Controls.Add(BtnExit);
             Controls.Add(btnReturn);
             Controls.Add(lblDCID);
@@ -207,8 +189,7 @@
         private Label label3;
         private Label lblUserID;
         private Label lblCurrentUser;
-        private Button button2;
-        private Button button1;
-        private Button btnTest;
+        private Button btnBulkCreate;
+        private Button btnBulkDelete;
     }
 }

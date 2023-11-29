@@ -34,12 +34,13 @@
             lblSelectCSV = new Label();
             lstViewFiles = new ListView();
             hdrName = new ColumnHeader();
-            isEnabled = new ColumnHeader();
+            upnAddr = new ColumnHeader();
             usrPasswd = new ColumnHeader();
             usrGrp = new ColumnHeader();
+            isEnabled = new ColumnHeader();
             hasCbrArkAccess = new ColumnHeader();
-            likesCheese = new ColumnHeader();
             btnTest = new Button();
+            BtnExit = new Button();
             SuspendLayout();
             // 
             // lblSelectedFiles
@@ -49,7 +50,7 @@
             lblSelectedFiles.FlatStyle = FlatStyle.Flat;
             lblSelectedFiles.Font = new Font("Lucida Console", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblSelectedFiles.ForeColor = Color.White;
-            lblSelectedFiles.Location = new Point(58, 240);
+            lblSelectedFiles.Location = new Point(70, 240);
             lblSelectedFiles.Name = "lblSelectedFiles";
             lblSelectedFiles.Size = new Size(127, 13);
             lblSelectedFiles.TabIndex = 18;
@@ -67,6 +68,7 @@
             label1.Size = new Size(119, 13);
             label1.TabIndex = 17;
             label1.Text = "Selected File:";
+            label1.Click += label1_Click;
             // 
             // btnCSVSel
             // 
@@ -101,7 +103,7 @@
             // 
             lstViewFiles.Anchor = AnchorStyles.Top;
             lstViewFiles.BackColor = Color.Black;
-            lstViewFiles.Columns.AddRange(new ColumnHeader[] { hdrName, isEnabled, usrPasswd, usrGrp, hasCbrArkAccess, likesCheese });
+            lstViewFiles.Columns.AddRange(new ColumnHeader[] { hdrName, upnAddr, usrPasswd, usrGrp, isEnabled, hasCbrArkAccess });
             lstViewFiles.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lstViewFiles.ForeColor = SystemColors.Info;
             lstViewFiles.HeaderStyle = ColumnHeaderStyle.Nonclickable;
@@ -115,27 +117,27 @@
             // 
             // hdrName
             // 
-            hdrName.Width = 170;
+            hdrName.Width = 90;
             // 
-            // isEnabled
+            // upnAddr
             // 
-            isEnabled.Width = 90;
+            upnAddr.Width = 130;
             // 
             // usrPasswd
             // 
-            usrPasswd.Width = 166;
+            usrPasswd.Width = 130;
             // 
             // usrGrp
             // 
-            usrGrp.Width = 166;
+            usrGrp.Width = 150;
+            // 
+            // isEnabled
+            // 
+            isEnabled.Width = 100;
             // 
             // hasCbrArkAccess
             // 
-            hasCbrArkAccess.Width = 80;
-            // 
-            // likesCheese
-            // 
-            likesCheese.Width = 80;
+            hasCbrArkAccess.Width = 150;
             // 
             // btnTest
             // 
@@ -151,6 +153,23 @@
             btnTest.TabIndex = 39;
             btnTest.Text = "Execute";
             btnTest.UseVisualStyleBackColor = false;
+            btnTest.Click += btnTest_Click;
+            // 
+            // BtnExit
+            // 
+            BtnExit.BackColor = Color.Navy;
+            BtnExit.FlatAppearance.MouseDownBackColor = Color.Blue;
+            BtnExit.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 192);
+            BtnExit.FlatStyle = FlatStyle.Flat;
+            BtnExit.Font = new Font("Verdana", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            BtnExit.ForeColor = SystemColors.ControlLightLight;
+            BtnExit.Location = new Point(179, 14);
+            BtnExit.Name = "BtnExit";
+            BtnExit.Size = new Size(21, 31);
+            BtnExit.TabIndex = 40;
+            BtnExit.Text = "X";
+            BtnExit.UseVisualStyleBackColor = false;
+            BtnExit.Click += BtnExit_Click;
             // 
             // btnExecute
             // 
@@ -158,13 +177,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(963, 523);
+            ControlBox = false;
+            Controls.Add(BtnExit);
             Controls.Add(btnTest);
             Controls.Add(lstViewFiles);
             Controls.Add(lblSelectedFiles);
             Controls.Add(label1);
             Controls.Add(btnCSVSel);
             Controls.Add(lblSelectCSV);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "btnExecute";
+            Resizable = false;
             Style = MetroFramework.MetroColorStyle.Orange;
             Text = "FileSelect";
             Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -184,7 +208,8 @@
         private ColumnHeader usrPasswd;
         private ColumnHeader usrGrp;
         private ColumnHeader hasCbrArkAccess;
-        private ColumnHeader likesCheese;
         private Button btnTest;
+        private ColumnHeader upnAddr;
+        private Button BtnExit;
     }
 }
