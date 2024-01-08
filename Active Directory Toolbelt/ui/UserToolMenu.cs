@@ -54,7 +54,7 @@ namespace Active_Directory_Toolbelt.ui
 
                 // Enter data from AD (Full Name, SMTP email, Manager, IsLocked, IsDisabled into the relevent text fields
                 varUserName.Text = "Dean Reid" + " (" + "REIDD" + ")";
-                varUserEmail.Text = "dean.reid@testemail.com";
+                varUserEmail.Text = "dean.reid@xenohost.co.uk";
                 varUserManager.Text = "Not Found";
                 varIsLocked.Text = "True";
                 varIsLocked.ForeColor = Color.Red;
@@ -62,7 +62,53 @@ namespace Active_Directory_Toolbelt.ui
                 varIsDisabled.ForeColor = Color.Green;
                 Refresh();
             }
-            else
+            else if (Reference.TRAINING_WHEELS && txtbxUserID.Text == "ENGLIC")
+            {
+                btnUnlockAcc.Enabled = true;
+                btnUnlockAcc.BackColor = Color.Lime;
+
+                btnEnableAcc.Enabled = true;
+                btnEnableAcc.BackColor = Color.Lime;
+
+                btnDisableAcc.Enabled = true;
+                btnDisableAcc.BackColor = Color.OrangeRed;
+
+                btnSetPasswd.Enabled = true;
+                btnSetPasswd.BackColor = Color.DodgerBlue;
+
+                // Enter data from AD (Full Name, SMTP email, Manager, IsLocked, IsDisabled into the relevent text fields
+                varUserName.Text = "Curtis English" + " (" + "ENGLIC" + ")";
+                varUserEmail.Text = "curtis.english@xenohost.co.uk";
+                varUserManager.Text = "Not Found";
+                varIsLocked.Text = "false";
+                varIsLocked.ForeColor = Color.Green;
+                varIsDisabled.Text = "False";
+                varIsDisabled.ForeColor = Color.Green;
+                Refresh();
+            } else if (Reference.TRAINING_WHEELS && txtbxUserID.Text == "MCRAS")
+            {
+                btnUnlockAcc.Enabled = true;
+                btnUnlockAcc.BackColor = Color.Lime;
+
+                btnEnableAcc.Enabled = true;
+                btnEnableAcc.BackColor = Color.Lime;
+
+                btnDisableAcc.Enabled = true;
+                btnDisableAcc.BackColor = Color.OrangeRed;
+
+                btnSetPasswd.Enabled = true;
+                btnSetPasswd.BackColor = Color.DodgerBlue;
+
+                // Enter data from AD (Full Name, SMTP email, Manager, IsLocked, IsDisabled into the relevent text fields
+                varUserName.Text = "Sophie McRae" + " (" + "MCRAS" + ")";
+                varUserEmail.Text = "sophie.mcrae@xenohost.co.uk";
+                varUserManager.Text = "Dean Reid (REIDD2)";
+                varIsLocked.Text = "false";
+                varIsLocked.ForeColor = Color.Green;
+                varIsDisabled.Text = "False";
+                varIsDisabled.ForeColor = Color.Green;
+                Refresh();
+            } else
             {
                 try
                 {

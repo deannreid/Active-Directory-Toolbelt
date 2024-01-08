@@ -1,5 +1,6 @@
 ﻿using Active_Directory_Toolbelt.handlers;
 using Active_Directory_Toolbelt.utils;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Diagnostics;
 using static Active_Directory_Toolbelt.handlers.LogHandler;
 
@@ -47,7 +48,7 @@ namespace Active_Directory_Toolbelt.ui
         {
             if (Reference.TRAINING_WHEELS && txtbxAssetID.Text == "SV01337")
             {
-                varUserName.Text = "SV01337";
+                varUserName.Text = "SV01337 [NPS]";
                 varSerialNbr.Text = "H5G1337";
                 varSysMDL.Text = "Poweredge R550";
                 varOSName.Text = "VMWare ESXi";
@@ -85,8 +86,87 @@ namespace Active_Directory_Toolbelt.ui
                 btnHousekeeping.Enabled = true;
                 Update();
             }
-            else
+            else if (Reference.TRAINING_WHEELS && txtbxAssetID.Text == "XHST-DayZ-USC-01")
             {
+                varUserName.Text = "XHST-DayZ-USC-01 [PRD]";
+                varSerialNbr.Text = "H5G1G371";
+                varSysMDL.Text = "Poweredge R420";
+                varOSName.Text = "VMWare ESXi";
+                varOSVersion.Text = "8.0";
+
+                varBitLockerStatus.Text = "Unlocked";
+                varBitLockerStatus.ForeColor = Color.Green;
+
+                varCMPDMN.Text = "XHSTCLOUD";
+                varSysIP.Text = "10.0.11.32";
+                varDHCPClassD.Text = "XHSTCLOUD.GB";
+                varDHCPClassIDBin.Text = "";
+
+                varIsDisabled.Text = "False";
+                varIsDisabled.ForeColor = Color.Green;
+
+                btnCompMGMT.Enabled = false;
+                btnDiskMGMT.Enabled = false;
+                btnNetworkMGMT.Enabled = true;
+                btnUserMGMT.Enabled = false;
+                btnComputerProp.Enabled = true;
+                btnWorkstationDataCap.Enabled = true;
+                btnRemotePS.Enabled = true;
+                btnRemoteDT.Enabled = true;
+                btnRemoteFA.Enabled = true;
+                btnDropSCCM.Enabled = false;
+                btnKillRPHost.Enabled = false;
+                btnForceReboot.Enabled = true;
+                btnWorkstationLockdown.Enabled = true;
+                btnPing.Enabled = true;
+                btnUptime.Enabled = true;
+                btnGroupPolicy.Enabled = false;
+                btnDiskInfo.Enabled = false;
+                btnOfficeRepair.Enabled = false;
+                btnHousekeeping.Enabled = false;
+                Update();
+            }
+            else if(Reference.TRAINING_WHEELS && txtbxAssetID.Text == "XHST-DC01")
+            {
+                varUserName.Text = "XHST-DC01 [PRD]";
+                varSerialNbr.Text = "H5G1G321";
+                varSysMDL.Text = "Poweredge R450";
+                varOSName.Text = "Windows Server";
+                varOSVersion.Text = "2022 - *DOMAIN CONTROLLER*";
+
+                varBitLockerStatus.Text = "Unlocked";
+                varBitLockerStatus.ForeColor = Color.Green;
+
+                varCMPDMN.Text = "XHSTCLOUD";
+                varSysIP.Text = "10.32.1.2";
+                varDHCPClassD.Text = "XHSTCLOUD.GB";
+                varDHCPClassIDBin.Text = "XHSTCLOUD";
+
+                varIsDisabled.Text = "False";
+                varIsDisabled.ForeColor = Color.Green;
+
+                btnCompMGMT.Enabled = false;
+                btnDiskMGMT.Enabled = false;
+                btnNetworkMGMT.Enabled = false;
+                btnUserMGMT.Enabled = false;
+                btnComputerProp.Enabled = false;
+                btnWorkstationDataCap.Enabled = true;
+                btnRemotePS.Enabled = true;
+                btnRemoteDT.Enabled = false;
+                btnRemoteFA.Enabled = false;
+                btnDropSCCM.Enabled = false;
+                btnKillRPHost.Enabled = false;
+                btnForceReboot.Enabled = false;
+                btnWorkstationLockdown.Enabled = false;
+                btnPing.Enabled = true;
+                btnUptime.Enabled = true;
+                btnGroupPolicy.Enabled = false;
+                btnDiskInfo.Enabled = false;
+                btnOfficeRepair.Enabled = false;
+                btnHousekeeping.Enabled = false;
+                Update();
+            } else
+                {
                 // When an ID is entered into the list, connect to Active Directory and get the information for that connected Device
                 // Once the information is retrieved, display it in the text boxes
                 // Enable the buttons
@@ -231,7 +311,7 @@ namespace Active_Directory_Toolbelt.ui
         {
             if (Reference.TRAINING_WHEELS)
             {
-                MessageBox.Show("Unable to connect to Workstation on Training Wheels :( .");
+                MessageBox.Show("Data Capture In Progress..... Completed... Check 'C://WSDCap.nfo'");
             }
             else
             {

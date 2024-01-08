@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net7.0-windows7.0": {
-      "Azure.Core/1.35.0": {
+      "Azure.Core/1.36.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -24,10 +24,10 @@
           }
         }
       },
-      "Azure.Identity/1.10.3": {
+      "Azure.Identity/1.10.4": {
         "type": "package",
         "dependencies": {
-          "Azure.Core": "1.35.0",
+          "Azure.Core": "1.36.0",
           "Microsoft.Identity.Client": "4.56.0",
           "Microsoft.Identity.Client.Extensions.Msal": "4.56.0",
           "System.Memory": "4.5.4",
@@ -847,12 +847,13 @@
           }
         }
       },
-      "Microsoft.Identity.Client/4.57.0": {
+      "Microsoft.Identity.Client/4.58.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Identity.Client.NativeInterop": "0.13.12",
+          "Microsoft.Identity.Client.NativeInterop": "0.13.14",
           "Microsoft.IdentityModel.Abstractions": "6.22.0",
-          "Microsoft.Web.WebView2": "1.0.864.35"
+          "Microsoft.Web.WebView2": "1.0.864.35",
+          "System.Diagnostics.DiagnosticSource": "7.0.2"
         },
         "compile": {
           "lib/net6.0-windows7.0/Microsoft.Identity.Client.dll": {
@@ -886,7 +887,7 @@
           }
         }
       },
-      "Microsoft.Identity.Client.NativeInterop/0.13.12": {
+      "Microsoft.Identity.Client.NativeInterop/0.13.14": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Identity.Client.NativeInterop.dll": {}
@@ -2059,7 +2060,7 @@
           }
         }
       },
-      "Sentry/3.41.0": {
+      "Sentry/3.41.3": {
         "type": "package",
         "compile": {
           "lib/net6.0/Sentry.dll": {
@@ -2212,12 +2213,11 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/7.0.0": {
+      "System.Configuration.ConfigurationManager/8.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Diagnostics.EventLog": "7.0.0",
-          "System.Security.Cryptography.ProtectedData": "7.0.0",
-          "System.Security.Permissions": "7.0.0"
+          "System.Diagnostics.EventLog": "8.0.0",
+          "System.Security.Cryptography.ProtectedData": "8.0.0"
         },
         "compile": {
           "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
@@ -2368,7 +2368,7 @@
           }
         }
       },
-      "System.Diagnostics.DiagnosticSource/7.0.1": {
+      "System.Diagnostics.DiagnosticSource/7.0.2": {
         "type": "package",
         "compile": {
           "lib/net7.0/System.Diagnostics.DiagnosticSource.dll": {
@@ -2384,7 +2384,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Diagnostics.EventLog/7.0.0": {
+      "System.Diagnostics.EventLog/8.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0/System.Diagnostics.EventLog.dll": {
@@ -2506,11 +2506,8 @@
           }
         }
       },
-      "System.DirectoryServices/7.0.1": {
+      "System.DirectoryServices/8.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Security.Permissions": "7.0.0"
-        },
         "compile": {
           "lib/net7.0/System.DirectoryServices.dll": {
             "related": ".xml"
@@ -2531,12 +2528,12 @@
           }
         }
       },
-      "System.DirectoryServices.AccountManagement/7.0.1": {
+      "System.DirectoryServices.AccountManagement/8.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.DirectoryServices": "7.0.1",
-          "System.DirectoryServices.Protocols": "7.0.1"
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.DirectoryServices": "8.0.0",
+          "System.DirectoryServices.Protocols": "8.0.0"
         },
         "compile": {
           "lib/net7.0/System.DirectoryServices.AccountManagement.dll": {
@@ -2558,7 +2555,7 @@
           }
         }
       },
-      "System.DirectoryServices.Protocols/7.0.1": {
+      "System.DirectoryServices.Protocols/8.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0/System.DirectoryServices.Protocols.dll": {
@@ -3701,7 +3698,7 @@
           "lib/netstandard1.3/System.Security.Cryptography.Primitives.dll": {}
         }
       },
-      "System.Security.Cryptography.ProtectedData/7.0.1": {
+      "System.Security.Cryptography.ProtectedData/8.0.0": {
         "type": "package",
         "compile": {
           "lib/net7.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -4332,12 +4329,12 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "xunit/2.6.1": {
+      "xunit/2.6.2": {
         "type": "package",
         "dependencies": {
-          "xunit.analyzers": "1.4.0",
-          "xunit.assert": "2.6.1",
-          "xunit.core": "[2.6.1]"
+          "xunit.analyzers": "1.6.0",
+          "xunit.assert": "2.6.2",
+          "xunit.core": "[2.6.2]"
         }
       },
       "xunit.abstractions/2.0.3": {
@@ -4353,10 +4350,10 @@
           }
         }
       },
-      "xunit.analyzers/1.4.0": {
+      "xunit.analyzers/1.6.0": {
         "type": "package"
       },
-      "xunit.assert/2.6.1": {
+      "xunit.assert/2.6.2": {
         "type": "package",
         "compile": {
           "lib/net6.0/xunit.assert.dll": {
@@ -4369,11 +4366,11 @@
           }
         }
       },
-      "xunit.core/2.6.1": {
+      "xunit.core/2.6.2": {
         "type": "package",
         "dependencies": {
-          "xunit.extensibility.core": "[2.6.1]",
-          "xunit.extensibility.execution": "[2.6.1]"
+          "xunit.extensibility.core": "[2.6.2]",
+          "xunit.extensibility.execution": "[2.6.2]"
         },
         "build": {
           "build/xunit.core.props": {},
@@ -4384,7 +4381,7 @@
           "buildMultiTargeting/xunit.core.targets": {}
         }
       },
-      "xunit.extensibility.core/2.6.1": {
+      "xunit.extensibility.core/2.6.2": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -4401,11 +4398,11 @@
           }
         }
       },
-      "xunit.extensibility.execution/2.6.1": {
+      "xunit.extensibility.execution/2.6.2": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "xunit.extensibility.core": "[2.6.1]"
+          "xunit.extensibility.core": "[2.6.2]"
         },
         "compile": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {
@@ -4421,16 +4418,16 @@
     }
   },
   "libraries": {
-    "Azure.Core/1.35.0": {
-      "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
+    "Azure.Core/1.36.0": {
+      "sha512": "vwqFZdHS4dzPlI7FFRkPx9ctA+aGGeRev3gnzG8lntWvKMmBhAmulABi1O9CEvS3/jzYt7yA+0pqVdxkpAd7dQ==",
       "type": "package",
-      "path": "azure.core/1.35.0",
+      "path": "azure.core/1.36.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.core.1.35.0.nupkg.sha512",
+        "azure.core.1.36.0.nupkg.sha512",
         "azure.core.nuspec",
         "azureicon.png",
         "lib/net461/Azure.Core.dll",
@@ -4447,16 +4444,16 @@
         "lib/netstandard2.0/Azure.Core.xml"
       ]
     },
-    "Azure.Identity/1.10.3": {
-      "sha512": "l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==",
+    "Azure.Identity/1.10.4": {
+      "sha512": "hSvisZy9sld0Gik1X94od3+rRXCx+AKgi+iLH6fFdlnRZRePn7RtrqUGSsORiH2h8H2sc4NLTrnuUte1WL+QuQ==",
       "type": "package",
-      "path": "azure.identity/1.10.3",
+      "path": "azure.identity/1.10.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "CHANGELOG.md",
         "README.md",
-        "azure.identity.1.10.3.nupkg.sha512",
+        "azure.identity.1.10.4.nupkg.sha512",
         "azure.identity.nuspec",
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
@@ -5647,10 +5644,10 @@
         "microsoft.extensions.objectpool.nuspec"
       ]
     },
-    "Microsoft.Identity.Client/4.57.0": {
-      "sha512": "cE6FQvNIh9Brcok/JztOQa3t62XftatH7+Oi/PK6HbQAIpKyAuIj/ac4P9VrwPW+S2MkLR1/jEY5rXpLoHBC/w==",
+    "Microsoft.Identity.Client/4.58.0": {
+      "sha512": "dRPo7/omWfLcxUniAvlsTduSm0YYpef6Mumlx1PjXfIeB8tWrXe5vK9h8Ld41u/5W569Sx5QKSz+VI4KtxsVjg==",
       "type": "package",
-      "path": "microsoft.identity.client/4.57.0",
+      "path": "microsoft.identity.client/4.58.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5660,8 +5657,8 @@
         "lib/monoandroid90/Microsoft.Identity.Client.xml",
         "lib/net45/Microsoft.Identity.Client.dll",
         "lib/net45/Microsoft.Identity.Client.xml",
-        "lib/net461/Microsoft.Identity.Client.dll",
-        "lib/net461/Microsoft.Identity.Client.xml",
+        "lib/net462/Microsoft.Identity.Client.dll",
+        "lib/net462/Microsoft.Identity.Client.xml",
         "lib/net6.0-android31.0/Microsoft.Identity.Client.dll",
         "lib/net6.0-android31.0/Microsoft.Identity.Client.xml",
         "lib/net6.0-ios15.4/Microsoft.Identity.Client.dll",
@@ -5677,7 +5674,7 @@
         "lib/uap10.0.17763/Microsoft.Identity.Client.xml",
         "lib/xamarinios10/Microsoft.Identity.Client.dll",
         "lib/xamarinios10/Microsoft.Identity.Client.xml",
-        "microsoft.identity.client.4.57.0.nupkg.sha512",
+        "microsoft.identity.client.4.58.0.nupkg.sha512",
         "microsoft.identity.client.nuspec"
       ]
     },
@@ -5694,10 +5691,10 @@
         "microsoft.identity.client.extensions.msal.nuspec"
       ]
     },
-    "Microsoft.Identity.Client.NativeInterop/0.13.12": {
-      "sha512": "BCcACBnhuYHowDklJ9TYdcz63CiafkXzmtXZzQfnWFRkU4lIHY1ClSzqW8wa6SMG4E/M/YTyIQQtXMxiA+Jwkg==",
+    "Microsoft.Identity.Client.NativeInterop/0.13.14": {
+      "sha512": "hLRY8KREDIfHa7SrLfE4UUJk1iSNQjAw+tnLLhVB61mMr0Co5d+y92pIhcfYwl42bCsLHrXrOkRVzJlVN1R5jA==",
       "type": "package",
-      "path": "microsoft.identity.client.nativeinterop/0.13.12",
+      "path": "microsoft.identity.client.nativeinterop/0.13.14",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5705,7 +5702,7 @@
         "buildtransitive/net461/Microsoft.Identity.Client.NativeInterop.targets",
         "lib/net461/Microsoft.Identity.Client.NativeInterop.dll",
         "lib/netstandard2.0/Microsoft.Identity.Client.NativeInterop.dll",
-        "microsoft.identity.client.nativeinterop.0.13.12.nupkg.sha512",
+        "microsoft.identity.client.nativeinterop.0.13.14.nupkg.sha512",
         "microsoft.identity.client.nativeinterop.nuspec",
         "runtimes/win-arm64/native/msalruntime_arm64.dll",
         "runtimes/win-x64/native/msalruntime.dll",
@@ -6986,10 +6983,10 @@
         "version.txt"
       ]
     },
-    "Sentry/3.41.0": {
-      "sha512": "Qb2BdKQhfy9NVOLnt1W6IOCKAOjIFjeJOQHrGfPz3fBfn8qycWLkVjEaXwVLACT2xMpAjxWfj3w1WQkFjv16sg==",
+    "Sentry/3.41.3": {
+      "sha512": "4vYXsUIaLhqwNE+g6Q/MYcgrLl2ZVbUPMt1bzFSqlCOBngNZOQ05O4SZveszPzGv/mBc/yelA4Ekr8SVFF8RfA==",
       "type": "package",
-      "path": "sentry/3.41.0",
+      "path": "sentry/3.41.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -7016,7 +7013,7 @@
         "lib/netstandard2.1/Sentry.dll",
         "lib/netstandard2.1/Sentry.xml",
         "sentry-nuget.png",
-        "sentry.3.41.0.nupkg.sha512",
+        "sentry.3.41.3.nupkg.sha512",
         "sentry.nuspec",
         "tools/sentry-cli-Darwin-arm64",
         "tools/sentry-cli-Darwin-x86_64",
@@ -7331,15 +7328,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Configuration.ConfigurationManager/7.0.0": {
-      "sha512": "WvRUdlL1lB0dTRZSs5XcQOd5q9MYNk90GkbmRmiCvRHThWiojkpGqWdmEDJdXyHbxG/BhE5hmVbMfRLXW9FJVA==",
+    "System.Configuration.ConfigurationManager/8.0.0": {
+      "sha512": "JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/7.0.0",
+      "path": "system.configuration.configurationmanager/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
         "buildTransitive/net462/_._",
@@ -7351,9 +7349,11 @@
         "lib/net6.0/System.Configuration.ConfigurationManager.xml",
         "lib/net7.0/System.Configuration.ConfigurationManager.dll",
         "lib/net7.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.8.0.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -7632,10 +7632,10 @@
         "system.diagnostics.debug.nuspec"
       ]
     },
-    "System.Diagnostics.DiagnosticSource/7.0.1": {
-      "sha512": "T9SLFxzDp0SreCffRDXSAS5G+lq6E8qP4knHS2IBjwCdx2KEvGnGZsq7gFpselYOda7l6gXsJMD93TQsFj/URA==",
+    "System.Diagnostics.DiagnosticSource/7.0.2": {
+      "sha512": "hYr3I9N9811e0Bjf2WNwAGGyTuAFbbTgX1RPLt/3Wbm68x3IGcX5Cl75CMmgT6WlNwLQ2tCCWfqYPpypjaf2xA==",
       "type": "package",
-      "path": "system.diagnostics.diagnosticsource/7.0.1",
+      "path": "system.diagnostics.diagnosticsource/7.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7654,20 +7654,21 @@
         "lib/net7.0/System.Diagnostics.DiagnosticSource.xml",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
-        "system.diagnostics.diagnosticsource.7.0.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Diagnostics.EventLog/7.0.0": {
-      "sha512": "eUDP47obqQm3SFJfP6z+Fx2nJ4KKTQbXB4Q9Uesnzw9SbYdhjyoGXuvDn/gEmFY6N5Z3bFFbpAQGA7m6hrYJCw==",
+    "System.Diagnostics.EventLog/8.0.0": {
+      "sha512": "fdYxcRjQqTTacKId/2IECojlDSFvp7LP5N78+0z/xH7v/Tuw5ZAxu23Y6PTCRinqyu2ePx+Gn1098NC6jM6d+A==",
       "type": "package",
-      "path": "system.diagnostics.eventlog/7.0.0",
+      "path": "system.diagnostics.eventlog/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Diagnostics.EventLog.targets",
         "buildTransitive/net462/_._",
@@ -7679,6 +7680,8 @@
         "lib/net6.0/System.Diagnostics.EventLog.xml",
         "lib/net7.0/System.Diagnostics.EventLog.dll",
         "lib/net7.0/System.Diagnostics.EventLog.xml",
+        "lib/net8.0/System.Diagnostics.EventLog.dll",
+        "lib/net8.0/System.Diagnostics.EventLog.xml",
         "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
         "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
         "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
@@ -7687,7 +7690,10 @@
         "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll",
         "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll",
         "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.xml",
-        "system.diagnostics.eventlog.7.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.8.0.0.nupkg.sha512",
         "system.diagnostics.eventlog.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -7927,15 +7933,16 @@
         "system.diagnostics.tracing.nuspec"
       ]
     },
-    "System.DirectoryServices/7.0.1": {
-      "sha512": "Z4FVdUJEVXbf7/f/hU6cFZDtxN5ozUVKJMzXoHmC+GCeTcqzlxqmWtxurejxG3K+kZ6H0UKwNshoK1CYnmJ1sg==",
+    "System.DirectoryServices/8.0.0": {
+      "sha512": "7nit//efUTy1OsAKco2f02PMrwsR2S234N0dVVp84udC77YcvpOQDz5znAWMtgMWBzY1aRJvUW61jo/7vQRfXg==",
       "type": "package",
-      "path": "system.directoryservices/7.0.1",
+      "path": "system.directoryservices/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.DirectoryServices.targets",
@@ -7944,26 +7951,31 @@
         "lib/net6.0/System.DirectoryServices.xml",
         "lib/net7.0/System.DirectoryServices.dll",
         "lib/net7.0/System.DirectoryServices.xml",
+        "lib/net8.0/System.DirectoryServices.dll",
+        "lib/net8.0/System.DirectoryServices.xml",
         "lib/netstandard2.0/System.DirectoryServices.dll",
         "lib/netstandard2.0/System.DirectoryServices.xml",
         "runtimes/win/lib/net6.0/System.DirectoryServices.dll",
         "runtimes/win/lib/net6.0/System.DirectoryServices.xml",
         "runtimes/win/lib/net7.0/System.DirectoryServices.dll",
         "runtimes/win/lib/net7.0/System.DirectoryServices.xml",
-        "system.directoryservices.7.0.1.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.dll",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.xml",
+        "system.directoryservices.8.0.0.nupkg.sha512",
         "system.directoryservices.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.DirectoryServices.AccountManagement/7.0.1": {
-      "sha512": "UNytHYwA5IF55WQhashsMG57ize83JUGJxD8YJlOyO9ZlMTOD4Nt7y+A6mvmrU/swDoYWaVL+TNwE6hk9lyvbA==",
+    "System.DirectoryServices.AccountManagement/8.0.0": {
+      "sha512": "dCT8BYeeisx0IzAf6x+FSVWK3gz2fKI9pgLV16c7dY/lckw4aodNrgXqsFqyqJN5Kfxc3oklG+SCMYkRfg1V7A==",
       "type": "package",
-      "path": "system.directoryservices.accountmanagement/7.0.1",
+      "path": "system.directoryservices.accountmanagement/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.DirectoryServices.AccountManagement.targets",
@@ -7972,26 +7984,31 @@
         "lib/net6.0/System.DirectoryServices.AccountManagement.xml",
         "lib/net7.0/System.DirectoryServices.AccountManagement.dll",
         "lib/net7.0/System.DirectoryServices.AccountManagement.xml",
+        "lib/net8.0/System.DirectoryServices.AccountManagement.dll",
+        "lib/net8.0/System.DirectoryServices.AccountManagement.xml",
         "lib/netstandard2.0/System.DirectoryServices.AccountManagement.dll",
         "lib/netstandard2.0/System.DirectoryServices.AccountManagement.xml",
         "runtimes/win/lib/net6.0/System.DirectoryServices.AccountManagement.dll",
         "runtimes/win/lib/net6.0/System.DirectoryServices.AccountManagement.xml",
         "runtimes/win/lib/net7.0/System.DirectoryServices.AccountManagement.dll",
         "runtimes/win/lib/net7.0/System.DirectoryServices.AccountManagement.xml",
-        "system.directoryservices.accountmanagement.7.0.1.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.AccountManagement.dll",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.AccountManagement.xml",
+        "system.directoryservices.accountmanagement.8.0.0.nupkg.sha512",
         "system.directoryservices.accountmanagement.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.DirectoryServices.Protocols/7.0.1": {
-      "sha512": "t9hsL+UYRzNs30pnT2Tdx6ngX8McFUjru0a0ekNgu/YXfkXN+dx5OvSEv0/p7H2q3pdJLH7TJPWX7e55J8QB9A==",
+    "System.DirectoryServices.Protocols/8.0.0": {
+      "sha512": "puwJxURHDrYLGTQdsHyeMS72ClTqYa4lDYz6LHSbkZEk5hq8H8JfsO4MyYhB5BMMxg93jsQzLUwrnCumj11UIg==",
       "type": "package",
-      "path": "system.directoryservices.protocols/7.0.1",
+      "path": "system.directoryservices.protocols/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.DirectoryServices.Protocols.targets",
@@ -8000,21 +8017,29 @@
         "lib/net6.0/System.DirectoryServices.Protocols.xml",
         "lib/net7.0/System.DirectoryServices.Protocols.dll",
         "lib/net7.0/System.DirectoryServices.Protocols.xml",
+        "lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "lib/net8.0/System.DirectoryServices.Protocols.xml",
         "lib/netstandard2.0/System.DirectoryServices.Protocols.dll",
         "lib/netstandard2.0/System.DirectoryServices.Protocols.xml",
         "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.dll",
         "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.xml",
         "runtimes/linux/lib/net7.0/System.DirectoryServices.Protocols.dll",
         "runtimes/linux/lib/net7.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/linux/lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/linux/lib/net8.0/System.DirectoryServices.Protocols.xml",
         "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.dll",
         "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.xml",
         "runtimes/osx/lib/net7.0/System.DirectoryServices.Protocols.dll",
         "runtimes/osx/lib/net7.0/System.DirectoryServices.Protocols.xml",
+        "runtimes/osx/lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/osx/lib/net8.0/System.DirectoryServices.Protocols.xml",
         "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.dll",
         "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.xml",
         "runtimes/win/lib/net7.0/System.DirectoryServices.Protocols.dll",
         "runtimes/win/lib/net7.0/System.DirectoryServices.Protocols.xml",
-        "system.directoryservices.protocols.7.0.1.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.dll",
+        "runtimes/win/lib/net8.0/System.DirectoryServices.Protocols.xml",
+        "system.directoryservices.protocols.8.0.0.nupkg.sha512",
         "system.directoryservices.protocols.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -10465,15 +10490,16 @@
         "system.security.cryptography.primitives.nuspec"
       ]
     },
-    "System.Security.Cryptography.ProtectedData/7.0.1": {
-      "sha512": "3evI3sBfKqwYSwuBcYgShbmEgtXcg8N5Qu+jExLdkBXPty2yGDXq5m1/4sx9Exb8dqdeMPUs/d9DQ0wy/9Adwg==",
+    "System.Security.Cryptography.ProtectedData/8.0.0": {
+      "sha512": "+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
       "type": "package",
-      "path": "system.security.cryptography.protecteddata/7.0.1",
+      "path": "system.security.cryptography.protecteddata/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
         "buildTransitive/net462/_._",
@@ -10487,13 +10513,15 @@
         "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/net7.0/System.Security.Cryptography.ProtectedData.dll",
         "lib/net7.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
         "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
         "lib/xamarinios10/_._",
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "system.security.cryptography.protecteddata.7.0.1.nupkg.sha512",
+        "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -11904,16 +11932,16 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "xunit/2.6.1": {
-      "sha512": "SnTEV7LFf2s3GJua5AJKB/m115jDcWJSG5n02YZS05iezU2QJKjShCsOxlxL8FUO+J7h2/yXGEr+evgpIHc3sA==",
+    "xunit/2.6.2": {
+      "sha512": "sErOyzTZBfgeLcdu5y3CkhCirZikCe9GwEv56jbQRjSa4FyI2tIHjfBRvlWqg7M78bfAGajrreH0IHnxrUOpVA==",
       "type": "package",
-      "path": "xunit/2.6.1",
+      "path": "xunit/2.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "_content/README.md",
         "_content/logo-128-transparent.png",
-        "xunit.2.6.1.nupkg.sha512",
+        "xunit.2.6.2.nupkg.sha512",
         "xunit.nuspec"
       ]
     },
@@ -11934,10 +11962,10 @@
         "xunit.abstractions.nuspec"
       ]
     },
-    "xunit.analyzers/1.4.0": {
-      "sha512": "7ljnTJfFjz5zK+Jf0h2dd2QOSO6UmFizXsojv/x4QX7TU5vEgtKZPk9RvpkiuUqg2bddtNZufBoKQalsi7djfA==",
+    "xunit.analyzers/1.6.0": {
+      "sha512": "b/Wbrqr/bFvcjqAbYdJyCCvjz+PjjKMnoK/K6sbcCBu94pqAkB2vBAHFo87wNq2awsLPAuq5MA7q0XexyQ3mJQ==",
       "type": "package",
-      "path": "xunit.analyzers/1.4.0",
+      "path": "xunit.analyzers/1.6.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -11948,14 +11976,14 @@
         "analyzers/dotnet/cs/xunit.analyzers.fixes.dll",
         "tools/install.ps1",
         "tools/uninstall.ps1",
-        "xunit.analyzers.1.4.0.nupkg.sha512",
+        "xunit.analyzers.1.6.0.nupkg.sha512",
         "xunit.analyzers.nuspec"
       ]
     },
-    "xunit.assert/2.6.1": {
-      "sha512": "+4bI81RS88tiYvfsBfC0YsdDd8v7kkLkRtDXmux3YBT8u1afhjdwxwBvkHGgrQ6NPRzE8xZpVGX2iaLkbXvYvg==",
+    "xunit.assert/2.6.2": {
+      "sha512": "JOj2+zWS08M59bCk3MkZFcKj2Izb2zwkHSPIKJLvnZYLR2Nw6HifjvBCpa8XhMF3mxDuGwZ0+ncmlhE9WoEaZw==",
       "type": "package",
-      "path": "xunit.assert/2.6.1",
+      "path": "xunit.assert/2.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11965,14 +11993,14 @@
         "lib/net6.0/xunit.assert.xml",
         "lib/netstandard1.1/xunit.assert.dll",
         "lib/netstandard1.1/xunit.assert.xml",
-        "xunit.assert.2.6.1.nupkg.sha512",
+        "xunit.assert.2.6.2.nupkg.sha512",
         "xunit.assert.nuspec"
       ]
     },
-    "xunit.core/2.6.1": {
-      "sha512": "Ru0POZXVYwa/G3/tS3TO3Yug/P+08RPeDkuepTmywNjfICYwHHY9zJBoxdeziZ0OintLtLKUMOBcC6VJzjqhwg==",
+    "xunit.core/2.6.2": {
+      "sha512": "LxJ06D9uTDyvHY52+Lym2TUlq3ObgAKSTuzM9gniau8qI1fd/CPag4PFaGs0RJfunUJtYHg9+XrS5EcW/5dxGA==",
       "type": "package",
-      "path": "xunit.core/2.6.1",
+      "path": "xunit.core/2.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -11982,14 +12010,14 @@
         "build/xunit.core.targets",
         "buildMultiTargeting/xunit.core.props",
         "buildMultiTargeting/xunit.core.targets",
-        "xunit.core.2.6.1.nupkg.sha512",
+        "xunit.core.2.6.2.nupkg.sha512",
         "xunit.core.nuspec"
       ]
     },
-    "xunit.extensibility.core/2.6.1": {
-      "sha512": "DA4NqcFGLlRxX2zP3QptlQuRoOSdmBkr17ntK29jfRXqScj2fysIhvQvF5DHtDzAEkoRPqZcfR/IRGSItxmRqw==",
+    "xunit.extensibility.core/2.6.2": {
+      "sha512": "T8CmshbP1EeaDibLwgU/aEe53zrW0+x+mEz5aKxexS5vVyj1UwgDUjcTK/+prMF/9KgMHkgx1vIe7wv58wO6RQ==",
       "type": "package",
-      "path": "xunit.extensibility.core/2.6.1",
+      "path": "xunit.extensibility.core/2.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12002,14 +12030,14 @@
         "lib/net452/xunit.runner.utility.net452.dll",
         "lib/netstandard1.1/xunit.core.dll",
         "lib/netstandard1.1/xunit.core.xml",
-        "xunit.extensibility.core.2.6.1.nupkg.sha512",
+        "xunit.extensibility.core.2.6.2.nupkg.sha512",
         "xunit.extensibility.core.nuspec"
       ]
     },
-    "xunit.extensibility.execution/2.6.1": {
-      "sha512": "sLKPQKuEQhRuhVuLiYEkRdUcwCfp+BIKds3r0JL8AYvOWRmVYYKWYouuYzPjmeUF6iEGC9CHCVz/NF1+wv+Mag==",
+    "xunit.extensibility.execution/2.6.2": {
+      "sha512": "kKo7XqyLF8blXGqQHlqKQ+AzST42kpB7oG81Km/kFEzWVfeDMgaEquOLAr/ZiR4tnkUbbWYrY6CJPTavFqGn6Q==",
       "type": "package",
-      "path": "xunit.extensibility.execution/2.6.1",
+      "path": "xunit.extensibility.execution/2.6.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -12019,25 +12047,25 @@
         "lib/net452/xunit.execution.desktop.xml",
         "lib/netstandard1.1/xunit.execution.dotnet.dll",
         "lib/netstandard1.1/xunit.execution.dotnet.xml",
-        "xunit.extensibility.execution.2.6.1.nupkg.sha512",
+        "xunit.extensibility.execution.2.6.2.nupkg.sha512",
         "xunit.extensibility.execution.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
-      "Azure.Identity >= 1.10.3",
+      "Azure.Identity >= 1.10.4",
       "Cake.Powershell >= 3.0.0",
       "DotNetOpenAuth >= 4.3.4.13329",
       "FakeItEasy >= 8.0.0",
       "MetroFramework >= 1.2.0.3",
       "Microsoft.Azure.ActiveDirectory.GraphClient >= 2.1.1",
-      "Microsoft.Identity.Client >= 4.57.0",
-      "Sentry >= 3.41.0",
+      "Microsoft.Identity.Client >= 4.58.0",
+      "Sentry >= 3.41.3",
       "System.Diagnostics.Process >= 4.3.0",
-      "System.DirectoryServices >= 7.0.1",
-      "System.DirectoryServices.AccountManagement >= 7.0.1",
-      "xunit >= 2.6.1"
+      "System.DirectoryServices >= 8.0.0",
+      "System.DirectoryServices.AccountManagement >= 8.0.0",
+      "xunit >= 2.6.2"
     ]
   },
   "packageFolders": {
@@ -12081,7 +12109,7 @@
         "dependencies": {
           "Azure.Identity": {
             "target": "Package",
-            "version": "[1.10.3, )"
+            "version": "[1.10.4, )"
           },
           "Cake.Powershell": {
             "target": "Package",
@@ -12105,11 +12133,11 @@
           },
           "Microsoft.Identity.Client": {
             "target": "Package",
-            "version": "[4.57.0, )"
+            "version": "[4.58.0, )"
           },
           "Sentry": {
             "target": "Package",
-            "version": "[3.41.0, )"
+            "version": "[3.41.3, )"
           },
           "System.Diagnostics.Process": {
             "target": "Package",
@@ -12117,15 +12145,15 @@
           },
           "System.DirectoryServices": {
             "target": "Package",
-            "version": "[7.0.1, )"
+            "version": "[8.0.0, )"
           },
           "System.DirectoryServices.AccountManagement": {
             "target": "Package",
-            "version": "[7.0.1, )"
+            "version": "[8.0.0, )"
           },
           "xunit": {
             "target": "Package",
-            "version": "[2.6.1, )"
+            "version": "[2.6.2, )"
           }
         },
         "imports": [

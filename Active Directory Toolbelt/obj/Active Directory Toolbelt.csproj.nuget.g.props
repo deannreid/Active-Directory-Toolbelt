@@ -13,11 +13,11 @@
     <SourceRoot Include="C:\Users\PhotonUser\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)xunit.core\2.6.1\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.6.1\build\xunit.core.props')" />
+    <Import Project="$(NuGetPackageRoot)xunit.core\2.6.2\build\xunit.core.props" Condition="Exists('$(NuGetPackageRoot)xunit.core\2.6.2\build\xunit.core.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\PhotonUser\.nuget\packages\xunit.analyzers\1.4.0</Pkgxunit_analyzers>
-    <PkgSentry Condition=" '$(PkgSentry)' == '' ">C:\Users\PhotonUser\.nuget\packages\sentry\3.41.0</PkgSentry>
+    <Pkgxunit_analyzers Condition=" '$(Pkgxunit_analyzers)' == '' ">C:\Users\PhotonUser\.nuget\packages\xunit.analyzers\1.6.0</Pkgxunit_analyzers>
+    <PkgSentry Condition=" '$(PkgSentry)' == '' ">C:\Users\PhotonUser\.nuget\packages\sentry\3.41.3</PkgSentry>
     <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">C:\Users\PhotonUser\.nuget\packages\microsoft.web.webview2\1.0.864.35</PkgMicrosoft_Web_WebView2>
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\PhotonUser\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMetroFramework_Design Condition=" '$(PkgMetroFramework_Design)' == '' ">C:\Users\PhotonUser\.nuget\packages\metroframework.design\1.2.0.3</PkgMetroFramework_Design>
