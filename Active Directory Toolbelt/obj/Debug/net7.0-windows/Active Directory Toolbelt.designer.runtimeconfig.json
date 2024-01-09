@@ -12,10 +12,11 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\PhotonUser\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\PhotonUser\\.nuget\\packages"
+      "C:\\Users\\Deann\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Deann\\.nuget\\packages"
     ],
     "configProperties": {
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }

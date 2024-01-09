@@ -6,5 +6,10 @@
         {
             InitializeComponent();
         }
+
+        private void cmbIDPlatform_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

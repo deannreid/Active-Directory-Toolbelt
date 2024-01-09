@@ -12069,19 +12069,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PhotonUser\\.nuget\\packages\\": {}
+    "C:\\Users\\Deann\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj",
+      "projectUniqueName": "D:\\Repository\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj",
       "projectName": "Active Directory Toolbelt",
-      "projectPath": "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj",
-      "packagesPath": "C:\\Users\\PhotonUser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PhotonUser\\Source\\Repos\\deannreid\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\obj\\",
+      "projectPath": "D:\\Repository\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\Active Directory Toolbelt.csproj",
+      "packagesPath": "C:\\Users\\Deann\\.nuget\\packages\\",
+      "outputPath": "D:\\Repository\\Active-Directory-Toolbelt\\Active Directory Toolbelt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PhotonUser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Deann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12175,7 +12175,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

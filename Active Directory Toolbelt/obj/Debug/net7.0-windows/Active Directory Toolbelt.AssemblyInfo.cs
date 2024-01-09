@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Dean Reid")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.5")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+616885ccaa57adc4b08eb41a5e88ff9c2b7e3f73")]
 [assembly: System.Reflection.AssemblyProductAttribute("Active Directory Toolbelt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Active Directory Toolbelt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.5")]

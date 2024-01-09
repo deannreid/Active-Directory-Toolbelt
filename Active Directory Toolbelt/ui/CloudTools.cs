@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Active_Directory_Toolbelt.ui.popup;
+using System.Diagnostics;
 
 namespace Active_Directory_Toolbelt.ui
 {
@@ -11,26 +12,13 @@ namespace Active_Directory_Toolbelt.ui
 
         private void BtnAzure_Click(object sender, EventArgs e)
         {
-            Process.Start("https://portal.azure.com");
-            _ = new CloudTools();
-        }
 
-        private void BtnGCP_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://console.cloud.google.com/");
-            _ = new CloudTools();
-        }
+            varIsDisabled.Text = "Waiting for SSO Prompt";
+            varIsDisabled.ForeColor = Color.Orange;
 
-        private void BtnAWS_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://aws.amazon.com/console/");
-            _ = new CloudTools();
-        }
-
-        private void BtnIBM_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://cloud.ibm.com/login");
-            _ = new CloudTools();
+            var azureLogin = new CloudLoginPopup();
+            azureLogin.ShowDialog();
+            
         }
 
         private void BtnExit_Click(object sender, EventArgs e)

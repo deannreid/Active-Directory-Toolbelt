@@ -160,7 +160,7 @@
             panel1.Controls.Add(btnGCP);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
-            panel1.Location = new Point(502, 159);
+            panel1.Location = new Point(501, 159);
             panel1.Name = "panel1";
             panel1.Size = new Size(396, 232);
             panel1.TabIndex = 30;
@@ -187,7 +187,6 @@
             btnGCP.SizeMode = PictureBoxSizeMode.Zoom;
             btnGCP.TabIndex = 33;
             btnGCP.TabStop = false;
-            btnGCP.Click += BtnGCP_Click;
             // 
             // label2
             // 
@@ -236,7 +235,6 @@
             btnAWS.SizeMode = PictureBoxSizeMode.Zoom;
             btnAWS.TabIndex = 35;
             btnAWS.TabStop = false;
-            btnAWS.Click += BtnAWS_Click;
             // 
             // label4
             // 
@@ -298,7 +296,6 @@
             btnIBM.SizeMode = PictureBoxSizeMode.Zoom;
             btnIBM.TabIndex = 35;
             btnIBM.TabStop = false;
-            btnIBM.Click += BtnIBM_Click;
             // 
             // label7
             // 
