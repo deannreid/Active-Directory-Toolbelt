@@ -32,13 +32,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Azure.Identity" Version="1.10.4" />
+    <PackageReference Include="Azure.Identity" Version="1.11.0" />
     <PackageReference Include="Cake.Powershell" Version="3.0.0" />
     <PackageReference Include="DotNetOpenAuth" Version="4.3.4.13329" />
     <PackageReference Include="FakeItEasy" Version="8.0.0" />
     <PackageReference Include="MetroFramework" Version="1.2.0.3" />
     <PackageReference Include="Microsoft.Azure.ActiveDirectory.GraphClient" Version="2.1.1" />
-    <PackageReference Include="Microsoft.Identity.Client" Version="4.58.0" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.60.1" />
     <PackageReference Include="Sentry" Version="3.41.3" />
     <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
     <PackageReference Include="System.DirectoryServices" Version="8.0.0" />
