@@ -33,7 +33,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Identity" Version="1.10.4" />
-    <PackageReference Include="Cake.Powershell" Version="3.0.0" />
+    <PackageReference Include="Cake.Powershell" Version="4.0.0" />
     <PackageReference Include="DotNetOpenAuth" Version="4.3.4.13329" />
     <PackageReference Include="FakeItEasy" Version="8.0.0" />
     <PackageReference Include="MetroFramework" Version="1.2.0.3" />
